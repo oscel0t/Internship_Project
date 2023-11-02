@@ -1,0 +1,599 @@
+
+*{
+    
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lora', serif;
+
+}
+.navbar{
+    display: flex;
+    align-items: center ;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none ;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: black;
+}
+.container
+{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0 ;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+}
+.btn:hover {
+    background: #563434 ;
+}
+.header{
+    background: radial-gradient(#ddd3d3,rgb(234, 181, 96));
+
+}
+.header .row{
+    margin: 70px;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 50px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::before
+{
+    content: '';
+    background: #ff523b;
+    width: 200px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 280px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color:#ff523b ;
+}
+.col-4 :hover{
+    transform: translateY(-5px);
+}
+.ct img{
+    vertical-align: middle;
+    display: inline-block;
+}
+    
+
+.ftim img{
+    
+    height:auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+/*-----------------------------------footer---------------------------------------------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0px 20px;
+}
+.footer p{
+    color: #8a8a8a;
+}
+.footer b{
+    text-align: left;
+}
+.footer h2{
+    color: #fff;
+    margin-bottom: 10px;
+}
+footer-col-1,footer-col-2,footer-col-3{
+    min-width: 250px;
+    margin-bottom: 10px;
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2,.footer-col-3{
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.copy{
+    
+    margin-left: 110px;
+   padding: 0px 0px 20px 0px;
+}
+
+.copy img{
+    margin-left: 35%;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    
+    padding-bottom: 50px;
+    display: none;
+}
+
+ .lin img{
+    width: 25px;
+    margin-top: 20px;
+    margin-left: 83%;
+    margin-bottom: -25px;
+    border-radius: 19%;
+}
+
+/*----------------------------------------cart------------------------*/
+.cart-page{
+    margin: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+
+td input{
+    width:40px ;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 120px;
+    height:120px;
+    margin-right: 10px;
+}
+.total-price
+{
+    display: flex;
+    justify-content:flex-end;
+
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td :last-child{
+    text-align: right;
+}
+th :last-child{
+text-align: right;
+}
+
+
+
+/*------------------------------Contact Us------------------------------*/
+.Contacts{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background: radial-gradient(#ddd3d3,rgb(234, 181, 96));
+    color: rgb(145, 84, 67);
+    text-decoration-color: #ff523b;
+    background-size: cover;
+}
+.Contacts .content{
+    max-width: 800px;
+    text-align: center;
+}
+.Contacts .content h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: rgb(145, 84, 67);
+}.Contacts .content p{
+    
+    font-weight: 300;
+    color: #000;
+}
+.cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.cont .contactInfo{
+    width: 50%;
+    display:flex ;
+    flex-direction: column;
+}
+.cont .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.cont .contactInfo .box .ico{
+    min-width: 60px;
+    height: 60px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.cont .contactInfo .box .txt{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #ff523b;
+    flex-direction: column;
+    font-weight: 300;
+}
+.cont .contactInfo .box .txt h3{
+    font-weight: 500;
+    color: rgb(145, 84, 67);
+}
+.contact-Form{
+    width: 40%;
+    padding: 40px;
+    
+}
+.contact-Form h2{
+    font-size: 30px;
+
+    font-weight: 500;
+
+}
+.contact-Form .input-Box{
+    position: relative;
+   width: 100%;
+   margin-top: 10px;
+}
+
+.contact-Form .input-Box input, .contact-Form .input-Box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333 ;
+    outline: none;
+    resize: none;
+}
+.contact-Form .input-Box span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #000;
+}
+.contact-Form .input-Box input:focus~span,
+.contact-Form .input-Box input:valid~span,
+.contact-Form .input-Box textarea:focus~span,
+.contact-Form .input-Box textarea:valid~span
+{
+    color:rgb(0, 0, 0);
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contact-Form .input-Box input[type="Submit"]{
+    width: 100px;
+    background:#ff523b;
+    color: antiquewhite;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    font-size: 18px;
+}
+/*-----------------------------About Us -------------------------------*/
+.hero{
+    background:radial-gradient(#ddd3d3,rgb(234, 181, 96));
+    overflow: hidden;
+    
+}
+.heading h2{
+    color: rgb(145, 84, 67);
+    font-size: 40px;
+    text-align: center;
+    margin-top:40px ;
+    font-weight: 500;
+    
+}
+.conta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.hero-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s;
+}
+.hero-content h3{
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #000;
+}
+.hero-content p{
+    font-size: 24px;
+    line-height:1.5 ;
+    margin-bottom: 40px;
+    color: #0a0909;
+}
+.hero-content button{
+    display: inline-block;
+    background-color:#fff;
+    color: #000;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.hero-content button:hover{
+    background: #ff523b;
+    transform: scale(1.1);
+}
+.hero-image{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s;
+}
+.hero-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/*----------------media query------------
+@media screen and (max-wi) {
+    
+}*/
+@media only screen and (max-width:800px){
+ nav ul{
+    position:absolute;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+ }
+ nav ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom:10px ;
+ }
+ nav ul li a{
+    color: #fff;
+ }
+ .menu-icon{
+    display: block;
+    cursor: pointer;
+ }
+}
+/*--------------All Products-----------*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #ff523b;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+.pagebtn{
+    margin:0 auto 80px ;
+
+}
+.pagebtn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.pagebtn span:hover{
+    background: #ff523b;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+    }
+    .cart-info p{
+        display: none;
+    }
+    .Contacts{
+        padding: 50px;
+    }
+    .cont{
+        flex-direction: column;
+    }
+    .cont .contactInfo{
+        margin-bottom: 40px;
+        
+    }
+    .cont .contactInfo,.contact-Form{
+        width: 100%;
+    }
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+
+    }
+    .conta{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content botton{
+        font-size: 16px;
+        padding: 0px 16px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
